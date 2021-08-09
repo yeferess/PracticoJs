@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra- Prestamo de Moto</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.jpg" alt="">
+        <nav>
+            <ul class="trabajos">
+                <li><a href="./rango.html" class="trabajo">Rango</a></li>
+                <li><a href="./botones.html" class="trabajo">Medidas Triangulo</a></li>
+                <li><a href="./descuento.html" class="trabajo">Cupones</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <h1>invierte y ahorra par tu moto</h1>
+        <h2>Caracteristicas Moto: </h2>
+        <form action="" class="formMain">
+
+            <LAbel for="queMoto">Que Moto quieres?</LAbel>
+            <select name="Moto" id="queMoto">
+                <option disabled value="">Selecciona tu moto</option>
+                <option value="Fz 2.0">Fz 2.0</option>
+                <option value="Rx 115">Rx 115</option>
+                <option value="DR 650">DR 650</option>
+                <option value="XT 660">XT 660</option>
+                <option value="CB 110">CB 110</option>
+                <option value="Discover 125">Discover 125</option>
+
+            </select>
+            <div class="output">
+                <label for="Marca">Marca: </label>
+                <p id="Marca"  ></p>
+            </div>
+            <div class="output">
+                <label for="Modelo">Modelo: </label>
+                <p id="Modelo"></p>
+            </div>
+            <div class="output">
+                <label for="Precio">Precio: </label>
+                <p id="Precio"></p>
+            </div>
+            <div class="output1">
+                <label for="cuotasMinimas">cuotas Minimas: </label>
+                <p id="cuotasMinimas"></p>
+                <label for="valorCuotas"> valor: </label>
+                <p id="valorCuotas"></p>
+            </div>
+          
+            <div class="datosUsuario">
+           <h2>Caracteristicas Plan: </h2>
+
+                <div class="output2">
+                    <label for="cuotas">Cual es tu presupuesto Mensual $</label>
+                    <input type="number" placeholder="   Ingresa valor $" name="valor de la cuota" id="valorCuota">
+                </div>
+
+                <div class="output2">
+                    <label for="Salida" class="label1">Caracteristicas para tu plan: </label>
+                    <p id="Salida"></p>
+                 </div>     
+
+             </div>
+
+
+
+
+            <!--Pendiente ver si no cambío esta entrada por valor de la cuota  -->
+            <button class="enviar" type="button" onclick="verCaracteristicas()">Ver Caracteristicas</button>
+        </form>
+    </section>
+    <section class="tuPlan">
+        <p id="caracteristicasPlan"></p>
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="./listaMotos.js" ></script>
+</body>
+</html>

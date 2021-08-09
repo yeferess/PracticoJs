@@ -1,0 +1,163 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Noto Serif', serif; */
+}
+
+a, li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    height: 45px;
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   background-color: rgb(92, 201, 201);
+}
+
+header img{
+    height: 20px;
+    width: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+header nav{
+    width: 60%;
+}
+.trabajos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trabajos li{
+    width: 60px;
+    text-align: center;
+}
+
+.trabajos li a:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+.main{
+    padding: 20px 10px 0 15px;
+    background-color: gray;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main h1 {
+    font-size: 1.6rem;
+    text-transform:uppercase;
+}
+
+.main h2 {
+    color: rgb(84, 223, 223);
+    text-decoration: underline;
+    margin-bottom: 15px;;
+}
+
+.main .formMain {
+    min-height: 75% ;
+}
+
+.output{
+    margin-top: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.formMain .output1{
+    margin-top: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.formMain .output label{
+    width: 25%;
+}
+
+.formMain .output p{
+    padding-left: 10px;
+    width: 40%;
+    height: 20px;
+    background-color: white;
+    text-align:left;
+    /* padding: auto-0; */
+    border-radius: 10px;
+}
+
+.formMain .output1 label{
+    width: 25%;
+}
+.formMain .output1 p{
+    width: 25%;
+    height: 20px;
+    background-color: white;
+    text-align: center;
+    /* padding: auto-0; */
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.datosUsuario {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(190, 188, 188,0.5);
+    
+}
+
+
+
+.output2{
+    margin-top: 6px;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+}
+.output2 label {
+    width: 50%;
+    /* height: 90px;; */
+    padding-right: 40px;
+}
+.output2 p{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 5px;
+    border:1px solid black;
+}
+
+.output2 input {
+    border-radius: 10px;
+    height: 25px;
+}
+
+.formMain .enviar {
+    margin-top: 15px;
+    border-radius: 15px;
+    margin-left: 15px;
+    width:45%;
+}
+
+.tuPlan {
+    width:89%;
+    padding: 10px;
+}

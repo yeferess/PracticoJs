@@ -20,7 +20,7 @@ function CalcularMediana(lista) {
 
     if(par ===0) {
         number1 = lista.length / 2;
-        number2 = number1 - 1;
+        number2 = number1 - 1;  
         let MedianaPromedio = CalcularPromedio([lista[number1], lista[number2]]);
         return MedianaPromedio
 
